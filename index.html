@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="card">
+
+        <div class="card-front">
+          <img class="card-logo" src="./images/card-logo.svg" alt="">
+          <span class="card-number">0000 0000 0000 0000</span>
+          <div>
+            <span class="card-name">Jane Aplessed</span>
+            <span class="card-expiration-date">
+              <span class="month">00</span>/<span class="years">00</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="card-back">
+          <span>000</span>
+        </div>
+
+      </section>
+      <section class="form">
+        <div class="fffooo">
+          <label for="cardholder-name">Cardholder Name</label>
+          <input
+            type="text"
+            id="cardholder-name"
+            name="cardholder-name"
+            placeholder="e.g. Jane Aplessed"
+            maxlength="30"
+          />
+          <span> </span>
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            name="card-number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            maxlength="19"
+          />
+          <span> </span>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="expiration-date">Exp. Date (MM/YY)</label>
+              <div class="input">
+                <input
+                  type="text"
+                  id="expiration-date-m"
+                  name="expiration-date"
+                  placeholder="MM"
+                  maxlength="2"
+                />
+                <input
+                  type="text"
+                  id="expiration-date-y"
+                  name="expiration-date"
+                  placeholder="YY"
+                  maxlength="2"
+                />
+              </div>
+              <span></span>
+            </div>
+            <div class="form-group">
+              <label for="cvc">CVC</label>
+              <input
+                type="text"
+                id="cvc"
+                name="cvc"
+                placeholder="e.g. 123"
+                maxlength="3"
+              />
+              <span> </span>
+            </div>
+          </div>
+          <button class="confirm">Confirm</button>
+        </div>
+      </section>
+
+      <section class="completed-state">
+        <img src="images/icon-complete.svg" alt="" />
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <button class="continue">Continue</button>
+      </section>
+      
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
